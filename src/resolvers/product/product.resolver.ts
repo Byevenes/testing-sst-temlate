@@ -15,10 +15,11 @@ import {
   GetProductInput,
 } from 'src/schema/product/product.dto'
 import { PaginatedProducts, Product } from 'src/schema/product/product.schema'
-import { Roles, UserModel } from 'src/schema/user/user.schema'
+import { UserModel } from 'src/schema/user/user.schema'
 import ProductService from 'src/service/product/product.service'
 import Context from 'src/types/context'
 import { PaginatedInputOptions } from 'src/utils/schemas/PaginatedOptions.dto'
+import { Roles } from 'src/utils/schemas/Roles'
 
 @Resolver(Product)
 export default class ProductResolver {
